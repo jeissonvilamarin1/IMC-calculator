@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Glory', sans-serif;
+}
+body{
+    max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.input-calc{
+    width: 15em;
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: #F2F3F4;
+}
+#form{
+    width: 80;
+}
+.form-item{
+    margin-top: 0.5em;
+}
+.form-item label{
+    display: inline-block;
+    font-weight: bold;
+    text-align: left;
+    padding-right: 1em;
+    width: 3em;
+}
+.form-item input{
+    text-align: right;
+    font-weight: bold;
+}
+.form-item span{
+    text-align: right;
+    color: green;
+    font-weight: bold;
+}
+.form-btn{
+    margin-top: 0.5em;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #AED6F1;
+}
+.form-btn:hover{
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-btn:active{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+.results{
+    width: 15em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: #F2F3F4;
+}
+.results label{
+    font-size: 1.5em;
+    color: green;
+}
+.results span{
+    font-size: 1.8em;
+    color: green;
+}
+#result-imc{
+    height: 1.5em;
+    color: red;
+}
+progress {
+  -webkit-appearance: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+::-webkit-progress-bar {
+   background: linear-gradient(90deg, rgba(14,0,255,1) 0%, rgba(0,201,10,1) 33%, rgba(255,244,0,1) 66%, rgba(255,0,0,1) 100%);
+     border: gray;
+  border-radius: 10px;
+}
+::-webkit-progress-value {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(84,140,168,1) 100%);
+    border: gray;
+  border-radius: 10px;
+}
+
+.category{
+    width: 15em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border: 1px solid gray;
+    background-color: #F2F3F4;
+    padding-left: 1em;
+}
+.category-item{
+    display: flex;
+    height: 2em;
+    align-items: center;
+}
+.category-item img{
+    width: 1em;
+    margin-right: 1em;
+}

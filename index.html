@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculadora IMC</title>
+</head>
+<body class="body">
+    <section class="input-calc">
+        <form id="form">
+            <h1>CALCULADORA IMC</h1>
+            <div class="form-item">
+                <span>Sexo</span>
+                <input type="radio" id="men"  name="sex" value="men">
+                <label for="men">Hombre</label>
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">Mujer</label>
+            </div>
+            <div class="form-item">
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age" required>
+            </div>
+            <div class="form-item">
+                <label for="weight">Peso</label>
+                <input type="number" name="weight" id="weight" required>
+                <span>kg</span>
+            </div>
+            <div class="form-item">
+                <label for="height">Altura</label>
+                <input type="text" name="height" id="height" required>
+                <span>m</span>
+            </div>
+            <input type="submit" class="form-btn" id="form-btn" value="Calcular IMC"></input>
+        </form>
+    </section>
+
+    <section>
+        <div class="results">
+            <label for="result-imc">Tu IMC es:</label>
+            <span id="result-number"></span>
+            <progress id="result-imc" max="40" value="0"></progress>   
+
+        </div>
+
+        <div class="category">
+            <div class="category-item">
+                <img src="./images/weight-scale-blue.svg" alt="">
+                <p>Bajo Peso => por debajo de 18.5</p>
+            </div>
+            <div class="category-item">
+                <img src="./images/weight-scale-green.svg" alt="">
+                <p>Saludable => entre 18.5 y 24.9</p>
+            </div>
+            <div class="category-item">
+                <img src="./images/weight-scale-yellow.svg" alt="">
+                <p>Exceso de Peso => entre 25 y 29.9</p>
+            </div>
+            <div class="category-item">
+                <img src="./images/weight-scale-red.svg" alt="">
+                <p>Obeso => de 30 en adelante</p>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
